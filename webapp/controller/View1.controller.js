@@ -37,8 +37,6 @@ sap.ui.define([
             factoryHandler: function(sId,oContext){
                 var oFragment = sap.ui.xmlfragment(sId,"exercise6.fragments.template",this);
                 oFragment.setBindingContext(oContext,"model1");
-                var aContent = oFragment.getContent();
-                // var oSelect = aContent[1]; // target the select control, through loop checking instance type
                 var oSelect = sap.ui.core.Fragment.byId(sId,"idSelect"); 
                 var oTemplate = new sap.ui.core.Item({
                     key: "{model2>key}",
